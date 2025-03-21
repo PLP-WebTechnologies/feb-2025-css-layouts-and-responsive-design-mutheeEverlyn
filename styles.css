@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(188, 188, 221), rgb(235, 168, 179));
+}
+header nav {
+    background: rgb(224, 198, 198);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h1 {
+    color: blue;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+nav ul li a:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.hero{
+    text-align: center;
+    padding-top: 100px;
+    height: 500px;
+    color: white;
+    background-image: url('https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about {
+    text-align: center;
+}
+#btn{
+    background: gray;
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+section {
+    margin-bottom: 20px;
+}
+table {
+    width: 80%;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+footer {
+    background: white;
+    text-align: center;
+    margin: 0; 
+}
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer div div {
+    display: flex;
+    flex-direction: column;
+}
+footer div div ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+}
+footer div div ul li {
+    padding: 5px;
+}
+footer div div ul li a {
+    text-decoration: none;
+    color: black;
+}
+footer div div ul li a:hover {
+    color: blue;
+}
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero{
+        padding-top: -20px;
+        margin: 0;
+        height: 300px;
+        width: 100%;
+    }
+}
